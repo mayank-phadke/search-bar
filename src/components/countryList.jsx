@@ -17,8 +17,8 @@ export default class CountryList extends React.Component {
                 )
             })
 
-        if(filteredData.length == 0) {
-            return(
+        if (filteredData.length == 0) {
+            return (
                 <div className="text-center mt-5">No Results</div>
             )
         }
@@ -32,9 +32,9 @@ export default class CountryList extends React.Component {
                             <div className="list-group-item d-block" key={index}>
                                 <div className="row">
                                     <div className="col-2">
-                                        <img className="img-fluid" style={{
-                                            width: "auto"
-                                        }} src={item.flag} />
+                                        <a href={item.flag} target="_blank">
+                                            <img className="img-fluid" style={{ width: "auto" }} src={item.flag} />
+                                        </a>
                                     </div>
                                     <div className="col">
                                         <div className="row">

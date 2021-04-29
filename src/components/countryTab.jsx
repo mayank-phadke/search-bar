@@ -24,6 +24,7 @@ export default class CountryTab extends React.Component {
     render() {
         return (
             <div>
+                <div className="alert alert-info m-3 mb-0">A list of all countries fetched form <a href="https://restcountries.eu/" target="_blank">restcountries.eu</a>. Click on any flag to view the original image. Click on the map button to view the country in google maps.</div>
                 <Searchbar
                     searchText={this.state.searchText}
                     onSearchChangeHandler={this.setSearchText.bind(this)}

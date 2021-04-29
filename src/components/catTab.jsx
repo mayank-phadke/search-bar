@@ -22,6 +22,7 @@ export default class UserTab extends React.Component {
     render() {
         return (
             <div>
+                <div className="alert alert-info m-3 mb-0">CATS!!! ❤️. Data fetched from <a href="https://thecatapi.com/" target="_bank">thecatapi.com</a>. Click on any image to view the original.</div>
                 <CatList
                     data={this.state.data}
                 />

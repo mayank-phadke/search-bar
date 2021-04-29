@@ -24,6 +24,7 @@ export default class UserTab extends React.Component {
     render() {
         return (
             <div>
+                <div className="alert alert-info m-3 mb-0">The list shows random users fetched from <a href="https://randomuser.me/" target="_blank">randomuser.me</a> API. Search by Name, email address or contact number. Click on the map to open their location on google maps. Click on email to send an email using your default email provider.</div>
                 <Searchbar
                     searchText={this.state.searchText}
                     onSearchChangeHandler={this.setSearchText.bind(this)}
@@ -37,6 +38,6 @@ export default class UserTab extends React.Component {
     }
 
     setSearchText(value) {
-		this.setState({ searchText: value });
-	}
+        this.setState({ searchText: value });
+    }
 }

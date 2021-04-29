@@ -24,6 +24,7 @@ export default class SpaceXTab extends React.Component {
     render() {
         return (
             <div>
+                <div className="alert alert-info m-3 mb-0">This is a list of all SpaceX launches fetched using the <a href="https://github.com/r-spacex/SpaceX-API/tree/master/docs/v4" target="_blank">SpaceX-API</a>. Search by Name. Click on the links to open Article, Wikipedia Page and YouTube Live Broadcast.</div>
                 <Searchbar
                     searchText={this.state.searchText}
                     onSearchChangeHandler={this.setSearchText.bind(this)} />
