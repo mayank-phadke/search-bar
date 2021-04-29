@@ -15,18 +15,6 @@ const cats = {
           reject(error);
         });
     });
-  },
-  getRandomCat: () => {
-    return new Promise((resolve, reject) => {
-      axios
-        .get("https://api.thecatapi.com/v1/images/search")
-        .then((response) => {
-          resolve(response);
-        })
-        .catch((error) => {
-          reject(error);
-        });
-    });
   }
 };
 

@@ -4,7 +4,7 @@ const userAPI = {
   getRandomUserNames: () => {
     return new Promise((resolve, reject) => {
       axios
-        .get("https://randomuser.me/api/?results=50")
+        .get("https://randomuser.me/api/?results=100")
         .then((response) => {
           resolve(response);
         })
