@@ -57,11 +57,16 @@ export default class UserList extends React.Component {
 										</div>
 									</div>
 									<div className="col">
-										<i class="fas fa-birthday-cake me-2"></i>
-										{new Date(item.dob.date).toLocaleDateString()}
-									</div>
-									<div className="col text-end">
-										{item.phone}
+										<div className="row">
+											<div className="col text-nowrap">
+												<i class="fas fa-birthday-cake me-2"></i>
+												{new Date(item.dob.date).toLocaleDateString()}
+											</div>
+											<div className="col text-end text-nowrap">
+												<i class="fas fa-phone me-2"></i>
+												{item.phone}
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
